@@ -1,0 +1,30 @@
+.close-button {
+  position: absolute;
+
+  box-sizing: content-box;
+  display: flex;
+  width: $close-button-size;
+  height: $close-button-size;
+  padding: $close-button-offset;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button__icon {
+  width: $close-button-size;
+  height: $close-button-size;
+}
+
+@media (max-width: $mobile-max-width) {
+  .close-button {
+    width: 14px;
+    height: 14px;
+  }
+
+  .close-button__icon {
+    width: 14px;
+    height: 14px;
+  }
+}

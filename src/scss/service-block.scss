@@ -1,0 +1,323 @@
+.service-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding-top: 54px;
+  padding-right: 11.54%;
+  padding-bottom: 60px;
+  padding-left: 6%;
+
+  background-color: $light-gray;
+  text-align: initial;
+
+  &--credit {
+    padding-bottom: 48px;
+  }
+
+  &--insurance {
+    padding-top: 48px;
+  }
+
+  &--mobile {
+    padding-top: 53px;
+    padding-bottom: 46px;
+  }
+}
+
+.service-block__description-column {
+  max-width: 410px;
+}
+
+.service-block__img-column {
+  flex-shrink: 0;
+  width: 45.59%;
+  padding-top: 6px;
+}
+
+.service-block__title {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 22px;
+  line-height: 140%;
+  font-weight: 500;
+}
+
+.service-block__features {
+  @include list-reset;
+
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.service-block__features-item {
+  margin-bottom: 15px;
+  padding-left: 21px;
+
+  background-image: url("../assets/img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 10px;
+  background-position: left -1px top 7px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.service-block__description {
+  max-width: 340px;
+  margin: 0;
+  margin-top: 29px;
+
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.service-block__link {
+  font-weight: 500;
+  color: $black;
+  text-decoration: underline;
+}
+
+.service-block__more-button {
+  margin-top: 35px;
+
+  padding-left: 30px;
+  padding-top: 16px;
+  padding-right: 31px;
+  padding-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.service-block--credit .service-block__img-column {
+  padding-top: 0;
+}
+
+.service-block--credit .service-block__title {
+  max-width: 325px
+}
+
+.service-block--insurance .service-block__description-column {
+  padding-top: 6px;
+}
+
+.service-block--insurance .service-block__title {
+  max-width: 340px;
+}
+
+.service-block--mobile .service-block__img-column {
+  padding-top: 0;
+}
+
+.service-block--mobile .service-block__title {
+  padding-top: 1px;
+}
+
+.service-block--mobile .service-block__features {
+  max-width: 360px;
+}
+
+.service-block__image {
+  display: block;
+}
+
+@media (max-width: $tablet-max-width) {
+  .service-block {
+    padding-bottom: 60px;
+    padding-right: $tablet-paddings;
+    padding-left: $tablet-paddings;
+  }
+
+  .service-block__description-column {
+    // max-width: 380px;
+    max-width: 56.05%;
+  }
+
+  .service-block__title {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+
+  .service-block__features {
+    font-size: 16px;
+  }
+
+  .service-block__features-item {
+    margin-bottom: 16px;
+
+    background-position: left -1px top 5px;
+  }
+
+  .service-block__more-button {
+    margin-top: 31px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+
+  .service-block__img-column {
+    width: 289px;
+  }
+
+  .service-block__image {
+    width: 289px;
+    height: 260px;
+  }
+
+  .service-block__description {
+    margin-top: 29px;
+
+    font-size: 16px;
+  }
+
+
+  .service-block--credit .service-block__img-column {
+    padding-top: 6px;
+  }
+
+  .service-block--credit .service-block__title {
+    max-width: 265px;
+  }
+
+  .service-block--insurance .service-block__img-column {
+    padding-top: 12px;
+  }
+
+  .service-block--insurance .service-block__title {
+    max-width: 280px;
+  }
+
+  .service-block--mobile .service-block__img-column {
+    padding-top: 7px;
+  }
+
+  .service-block--mobile .service-block__features {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .service-block {
+    position: relative;
+    padding-top: 55px;
+    padding-left: $mobile-paddings;
+    padding-right: $mobile-paddings;
+
+    &--credit {
+      padding-bottom: 85px;
+    }
+
+    &--insurance {
+      padding-bottom: 95px;
+    }
+
+    &--mobile {
+      padding-top: 54px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .service-block__description-column {
+    z-index: 1;
+    position: relative;
+
+    width: 100%;
+    max-width: initial;
+  }
+
+  .service-block__title {
+    max-width: 270px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+  }
+
+  .service-block__features {
+    position: relative;
+    z-index: 1;
+    max-width: 230px;
+
+    font-size: 14px;
+  }
+
+  .service-block__features-item {
+    margin-left: -1px;
+    margin-bottom: 12px;
+    padding-left: 16px;
+
+    background-image: url("../assets/img/icon-tick-small.svg");
+    background-size: 10px 8px;
+    background-position: left 0 top 5px;
+  }
+
+  .service-block__description {
+    margin-top: 23px;
+
+    font-size: 14px;
+  }
+
+  .service-block__more-button {
+    width: 100%;
+    margin-top: 26px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .service-block__img-column {
+    position: absolute;
+    top: 98px;
+    right: 0;
+
+    width: 87px;
+    padding-top: 0;
+  }
+
+  .service-block__image {
+    width: 87px;
+    height: 113px;
+  }
+
+  .service-block--credit .service-block__title {
+    max-width: 210px;
+  }
+
+  .service-block--insurance .service-block__description-column {
+    padding-top: 0;
+  }
+
+  .service-block--insurance .service-block__title {
+    max-width: 250px;
+  }
+
+  .service-block--insurance .service-block__features {
+    max-width: 260px;
+  }
+
+  .service-block--mobile .service-block__title {
+    padding-top: 0;
+    max-width: 250px;
+  }
+
+  .service-block--mobile .service-block__features {
+    max-width: 220px;
+  }
+
+  .service-block--insurance .service-block__more-button,
+  .service-block--mobile .service-block__more-button {
+    padding-top: 14px;
+    padding-left: 29px;
+    padding-bottom: 13px;
+  }
+
+  .service-block--credit .service-block__img-column,
+  .service-block--insurance .service-block__img-column,
+  .service-block--mobile .service-block__img-column {
+    padding-top: 0;
+  }
+}

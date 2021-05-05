@@ -1,0 +1,73 @@
+.login {
+  position: relative;
+
+  max-width: 202px;
+  padding-left: 29px;
+
+  line-height: 19px;
+  color: $black;
+  text-decoration: none;
+
+  @include basic-hover;
+  @include basic-active;
+}
+
+.login__icon {
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+@media (max-width: $tablet-max-width) {
+  .login {
+    right: -15px;
+    padding: 15px;
+
+    max-width: initial;
+  }
+
+  .login__icon {
+    position: static;
+  }
+
+  .login__title {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .login {
+    display: flex;
+    right: -13px;
+    padding: 13px;
+
+    &--with-text {
+      right: auto;
+
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $track-color;
+
+      padding-top: 18px;
+      padding-right: 15px;
+      padding-bottom: 19px;
+      padding-left: 15px;
+    }
+  }
+
+  .login--with-text .login__icon {
+    margin-right: 10px;
+  }
+
+  .login--with-text .login__title {
+    display: initial;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .login--always-short .login__icon {
+    width: 14px;
+    height: 16px;
+  }
+}

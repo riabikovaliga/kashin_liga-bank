@@ -1,0 +1,26 @@
+@mixin centered-layout {
+  width: auto;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-right: 3.3%;
+  padding-left: 3.3%;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin basic-hover {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+@mixin basic-active {
+  &:active {
+    opacity: 0.4;
+  }
+}

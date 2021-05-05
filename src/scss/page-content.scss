@@ -1,0 +1,20 @@
+.page-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+
+  padding-bottom: 110px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .page-content {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .page-content {
+    padding-bottom: 60px;
+  }
+}
+

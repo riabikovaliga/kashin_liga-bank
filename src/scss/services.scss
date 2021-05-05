@@ -1,0 +1,26 @@
+.services {
+  @include centered-layout;
+
+  padding-top: 60px;
+}
+
+@media (min-width: $desktop-threshold) {
+  .services {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .services {
+    position: relative;
+
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .services__buttons-list .slider-buttons__item--active .slider-buttons__icon {
+    fill: #E0E0E0;
+  }
+}

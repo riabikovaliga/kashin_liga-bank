@@ -1,0 +1,37 @@
+$black: #1F1E25;
+$lighter-black: #2B3C4F;
+$faded-black: #394959;
+
+$blue: #2C36F2;
+$dark-blue: #2028B6;
+
+$light-red: #FF0000;
+
+$light-gray: #F6F7FF;
+$faded-gray: #707C87;
+
+$track-color: #C1C2CA;
+
+$track-size: 14px;
+$close-button-size: 18px;
+$close-button-offset: 8px;
+
+
+/* Adaptive + Rubber variables */
+$desktop-text-wrap-max-width: 1260px;
+$desktop-width: 1366px;
+$desktop-content: 1170px;
+
+$desktop-threshold: $desktop-content + 2 * 45px;
+$min-content-desktop-width: 1024px;
+
+$tablet-max-width: 1023px;
+$tablet-width: 768px;
+$tablet-offset: 45px;
+$tablet-paddings: ($tablet-offset / $tablet-width) * 100%;
+
+$mobile-max-width: 767px;
+$mobile-width: 320px;
+$mobile-offset: 15px;
+$mobile-paddings: ($mobile-offset / $mobile-width) * 100%;
+$mobile-menu-height: 48px;

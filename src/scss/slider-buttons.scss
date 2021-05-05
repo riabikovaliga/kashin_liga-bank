@@ -1,0 +1,82 @@
+.slider-buttons .control-dots {
+  @include list-reset;
+
+  position: absolute;
+  left: 50%;
+
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+
+  transform: translateX(-50%);
+}
+
+.slider-buttons--promo-slider .control-dots {
+  bottom: 36px;
+}
+
+.slider-buttons--services .control-dots {
+  display: none;
+}
+
+.slider-buttons__item {
+  display: flex;
+}
+
+.slider-buttons__button {
+  box-sizing: content-box;
+  display: flex;
+  width: 8px;
+  height: 8px;
+
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include basic-hover;
+  @include basic-active;
+}
+
+.slider-buttons__icon {
+  width: 8px;
+  height: 8px;
+
+  fill: $dark-blue;
+}
+
+.slider-buttons__item--active .slider-buttons__icon {
+  fill: $light-gray;
+}
+
+@media (max-width: $tablet-max-width) {
+  .slider-buttons--promo-slider .control-dots {
+    bottom: 11px;
+  }
+
+  .slider-buttons--services .control-dots {
+    bottom: 11px;
+    display: flex;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .slider-buttons--promo-slider .control-dots {
+    bottom: 7px;
+  }
+
+  .slider-buttons__button {
+    width: 6px;
+    height: 6px;
+    padding: 3px;
+  }
+
+  .slider-buttons__icon {
+    width: 6px;
+    height: 6px;
+  }
+
+  .slider-buttons--services .control-dots {
+    bottom: 7px;
+  }
+}

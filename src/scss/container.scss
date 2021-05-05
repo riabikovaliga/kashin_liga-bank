@@ -1,0 +1,24 @@
+.container {
+  @include centered-layout;
+}
+
+@media (min-width: $desktop-threshold) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .container {
+    padding-right: $tablet-paddings;
+    padding-left: $tablet-paddings;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .container {
+    padding-right: $mobile-paddings;
+    padding-left: $mobile-paddings;
+  }
+}

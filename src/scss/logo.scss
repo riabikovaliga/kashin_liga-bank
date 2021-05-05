@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+}
+
+.logo__picture {
+  display: flex;
+}
+
+@media (max-width: $tablet-max-width) {
+  .logo {
+    margin-left: -1px;
+  }
+
+  .logo__image {
+    width: 134px;
+    height: 24px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .logo__image {
+    width: 116px;
+    height: 19px;
+  }
+}
